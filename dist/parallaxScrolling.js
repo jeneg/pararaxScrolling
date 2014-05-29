@@ -11,6 +11,7 @@
         $parallaxBlocks = $('[data-parallax]'),
         modernBrowser = true,
 
+        // setting image load function depending on browser capabilities
         imageLoadHandler = (function() {
             // if modern browser
             if('backgroundSize' in document.documentElement.style) {
@@ -32,8 +33,6 @@
                     $block.css({background: 'url("' + this.src + '") 50% 0'});
                 };
             }
-
-//            imageLoadHandler($block, src);
         }()),
 
         // get parallax speed from block attr

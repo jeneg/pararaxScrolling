@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Parallax scrolling demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+
+        <style>
+            .section {height: 600px;}
+        </style>
+    </head>
+    <body>
+
+        <div class="section" data-parallax="img/1.jpg" data-parallax-speed="0.3"></div>
+        <div class="section" data-parallax="img/2.jpg"></div>
+        <div class="section" data-parallax="img/3.jpg" data-parallax-speed="0.5"></div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="../dist/parallaxScrolling.js"></script>
+    </body>
+</html>
